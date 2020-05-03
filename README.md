@@ -4,7 +4,8 @@ Utility tool that receives an interval and filter all order placed during that i
 
 ### Prerequisites
 ```
-Docker - Docker-Compose
+Docker
+Docker-Compose
 Java 8
 Maven
 ```
