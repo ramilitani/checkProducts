@@ -164,6 +164,12 @@ UNLOCK TABLES;
 
 -- Dump completed on 2020-05-02 12:16:37
 
+
+--
+-- Dummy Data
+-- Initialize database with dummy data
+--
+
 DELETE FROM order_table_items;
 DELETE FROM item;
 DELETE FROM product;
