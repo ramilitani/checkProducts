@@ -22,7 +22,10 @@ Maven
  
  - Go to the target folder and run the following command to run the application.
     ```
-    java -jar checkproducts.jar <INITIAL_DATE> <FINAL_DATE> <CUSTOM_INTERVAL>
+    java -jar checkproducts.jar "<INITIAL_DATE>" "<FINAL_DATE>" "<CUSTOM_INTERVAL>"
+    
+    PS: java -jar checkproducts.jar "2019-01-01 00:00:00" "2020-05-02 00:00:00" "1-3,4-5,6-12,>12"
+   
     ```
    
    - The INITIAL_DATE and FINAL_DATE need to be in this format: YYYY-MM-DD HH:MM:SS
