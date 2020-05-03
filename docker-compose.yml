@@ -1,0 +1,17 @@
+version: '3.7'
+
+volumes:
+  db-data:
+    external: false
+    name: db-data
+
+services:
+  # Local Mysql 5.7.27 DB same version as Aurora DB
+  mysql:
+    image: mysql:5.7.27
+    volumes:
+      - db-data:/var/lib/mysql
+      - ./data/init.sql:/docker-entrypoint-initdb.d/init.sql
+    env_file: mysql_local.env
+    ports:
+      - 3306:3306
